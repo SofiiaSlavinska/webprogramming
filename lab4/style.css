@@ -1,0 +1,115 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #4a2c20;
+}
+
+header {
+    height: 100px;
+    background-color: #e2725b;
+    padding: 20px;
+    box-sizing: border-box;
+    border-bottom: 2px solid #b84a35;
+    display: flex;
+    align-items: center;
+}
+
+main {
+    height: 500px;
+    display: flex;
+}
+
+footer {
+    height: 100px;
+    background-color: #5c2c20;
+    color: #f5eedc;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#leftPanel, #content, #rightPanel {
+    width: 33.33%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+
+#leftPanel { background-color: #fae3d9; }
+#content { background-color: #fffcf9; }
+#rightPanel { background-color: #f5eedc; }
+
+.loader {
+    border: 6px solid #f3e5df;
+    border-radius: 50%;
+    border-top: 6px solid #e2725b;
+    width: 40px;
+    height: 40px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+    margin: 0 auto;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th, td {
+    border: 1px solid #d4a395;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f4c2b2;
+    cursor: pointer;
+    color: #5c2c20;
+}
+
+th:hover { background-color: #e8a592; }
+
+.highlight {
+    background-color: #ffd166;
+}
+
+button {
+    padding: 8px 12px;
+    cursor: pointer;
+    background-color: #d16049;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    margin-right: 5px;
+}
+
+button:hover {
+    background-color: #b84a35;
+}
+
+header button {
+    background-color: #fffcf9;
+    color: #b84a35;
+    font-weight: bold;
+}
+
+header button:hover {
+    background-color: #fae3d9;
+}
+
+input[type="text"] {
+    padding: 7px;
+    border: 1px solid #d4a395;
+    border-radius: 4px;
+    margin-right: 5px;
+    outline: none;
+}
